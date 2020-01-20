@@ -1,0 +1,145 @@
+Playdata 01-20
+Web Architecture
+자율사물(Autonomous things): 인간의 개입없이도 스스로가 할 수 있는 것 (자율주행차, 인공지능 로봇, 드론배달)
+몰입기술(Immersive Technology): 가상현실(VR) , 증강현실(AR) , 혼합현실=VR+AR(MR)
+
+Web이란? -거미줄 
+www : world wide web의 줄임말
+브라우져에서 client가 (데이터요청) - web server(요청&반응) - web application server(정보가져오는 역할) - database server(정보저장)
+
+프로토콜 
+HTTP (Hyper text transfer protocol)
+클라이언트가 웹서버에 요청할 때 HTTP 리퀘스트 (get/post)
+
+1. HTML 기본 : Hypertext markup language
+hyper text : 링크
+markup : </>
+=>HTML : 웹 표준 기술인 '언어'이다.
+
+*web browser 
+*web editor - Visual Studio Code 
+
+1) HTML 요소(Element)
+<tagname>Contents</tagname>
+시작태그  / 컨텐츠 /  종료태그
+2) HTML 빈 요소(Empty Element)
+<meta charset = "UTF-8">
+컨텐츠가 없음!
+3)  속성(Attribute)
+<img src="Hello.jpg>
+       속성명 / 속성 값
+4) 주석(Comments) -> ctrl + ? 키를 누르면 초록색으로 주석처리됨.
+<!--주석은 코드의 설명>
+
+(1) 텍스트
+: 제목(heading) <h>로 제목
+줄의 맨 뒤에 커서 놓고 shift + alt + 화살표 아래 : 복사 
+ctrl + alt + 화살표 아래:  같은 위치 여러개 선택
+<br>로 break 줄바꿈!
+<hr> horizental line : 가로선
+<br><hr><br>가로선을 넣어 다른 내용으로 바꿀때 구분!
+<b> : 굵게 & <strong>: 중요한 의미를 담을 때 사용. => 글자 굵게 설정가능!
+<i> & <em> :이탤릭체 설정-empasize 
+<mark> : 형광펜 효과
+<ins>: 삽입형태
+<del>: 삭제형태
+<sup>: 위첨자-super?
+<sub>: 아래 첨자-subway
+단락 <p>
+형태
+
+(2) 스타일(style)
+<tagname style="attributename: attributevalue;"> contents </tagname>
+  시작태그 / 스타일/ 속성명/       속성값        / 컨텐츠(스타일에 영향을 받는 부분) / 종료태그
+스타일을 여러개 중첩할 때는 세미콜론(;)으로 연결! 
+크기: font-size
+색: color
+위치 : text-align
+
+w3schools.com
+
+HTML Entities 
+<,>, 같은 표시들을 오류발생을 줄이기 위해서 줄임말로 사용한다. 
+&lt;(less than) : <
+&gt;(greater than) : >
+&nbsp; : 띄어쓰기 
+
+(3) 이미지
+<img src=" 주소 "alt=" ">
+source이미지 파일 경로/ alt (alternative)이미지가 없을 때 표시되는 대체문구
+이미지 크기 조정: width, height (너비&높이)
+또는 스타일로도 너비와 높이를 설정할 수 있음. 
+style="width: 180px; height: 60px"
+width="180px" height="60px" 
+
+HTML 경로(Path)
+URI (Unoform Resource Identifier) = URL + URN 
+URI(Identifier) 
+URL(Locator): 자원의 위치
+UNR(Name): 자원의 
+1) 절대 URL : 일정한 출발점이 있음
+2) 상대 URL : 각각의 위치에 있을 때 유니크한 것. 
+<프로토콜://ip주소:port번호/경로/파일명?쿼리>
+규약/네트워크 연결기기에 부여되는 고유번호/웹서버 접근 관문(port번호)/웹서버 자원 경로/웹서버 요청 파라미터
+
+DNS Checker 에서 ip주소를 파악할 수 있음.
+
+(4) 링크
+<a href=" ">
+a(attributr) / href(reference) /""이동예정 경로 : 절대 url, 상대 url, id, script 
+target = "_self" 이면 본래 있던 페이지에서 오픈
+target= "_blank" 이면 새 창을 만들어서 링크 연결
+
+HTML 공간 분할의 중요성-> 이후에 css에서 적용할 때 중요함
+1) 공간적 분할
+2) 의미적 분할
+
+블록 : 전체 웹페이지의 한 줄 전체!
+<P>
+<div> 
+
+인라인:  한 블록 내에서 특정 컨텐츠만이 차지하고 있는 부분이다. 
+<strong>
+<a>
+<span>
+
+시멘틱(semantic)
+<header> - nav -section - article - aside(article이 아닌 부분! 단순히 옆에 있는 것이 아님) - <footer>
+
+위치 조정 float: left/right -> 왼쪽 오른쪽으로 블록이 이동함. 
+
+
+2. Git 개요
+ git이란 버전관리 툴 
+원격 저장소: 큰 책자 
+로컬 저장소: 작은 책자
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
